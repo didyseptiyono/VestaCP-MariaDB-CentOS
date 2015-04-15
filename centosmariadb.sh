@@ -287,7 +287,7 @@ if [ ! -e '/etc/yum.repos.d/epel.repo' ]; then
         epel="6/$arch/epel-release-6-8.noarch.rpm"
     fi
  
-    rpm -ivh http://dl.fedoraproject.org/pub/epel/$epel
+    rpm -ivh http://epel.mirrors.ovh.net/epel/$epel
     if [ $? -ne 0 ]; then
         echo "Error: can't install EPEL repository"
         exit 1
